@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mäkko — premyslné postielky a textílie pre pokojný, dobrý spánok." />
+    <title>Mäkko — obliečky, ktoré sadnú ako zábeha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement">
+      <p>✦ Výprava zadarmo pri objednávke nad 80 €</p>
+      <p class="announcement-secondary">Dodanie do 2 – 4 pracovných dní</p>
+    </div>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Mäkko domovská stránka">mäkko<span>.</span></a>
+
+        <nav class="main-nav" id="main-nav" aria-label="Hlavná navigácia">
+          <a href="#shop">Kolekcie</a>
+          <a href="#story">O nás</a>
+          <a href="#journal">Magazín</a>
+          <a href="#faq">Pomoc</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-button search-trigger" type="button" aria-label="Hľadať produkty" data-action="focus-search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.8"></circle><path d="m16.2 16.2 4.3 4.3"></path></svg>
+          </button>
+          <button class="cart-button" type="button" aria-expanded="false" aria-controls="cart-drawer" data-action="open-cart">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h2l1.7 10.1a2 2 0 0 0 2 1.7h7.8a2 2 0 0 0 1.9-1.4L21 8H7"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg>
+            <span>Košík</span>
+            <b class="cart-count" id="cart-count">0</b>
+          </button>
+          <button class="menu-trigger" type="button" aria-label="Otvoriť menu" aria-expanded="false" data-action="toggle-menu">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span></span>Nová kolekcia · jeseň 2026</p>
+            <h1>Spánok, ktorý sa cíti <em>ako zábeha.</em></h1>
+            <p class="hero-text">Mäkké textílie z prírodných materiálov, ručne ušité v malých série. Vytvorte si domov, v ktorom sa chcete znova narodiť.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#shop">Prehliadnuť kolekciu <span>↗</span></a>
+              <a class="text-link" href="#story">Ako vyberať postielky <span>→</span></a>
+            </div>
+            <div class="hero-proof">
+              <div class="avatar-stack" aria-hidden="true">
+                <span class="avatar avatar-one">A</span>
+                <span class="avatar avatar-two">M</span>
+                <span class="avatar avatar-three">K</span>
+                <span class="avatar avatar-four">+</span>
+              </div>
+              <div><strong>4,9 / 5</strong><span>viac ako 2 000 dobrých spánkov</span></div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal reveal-delay">
+            <div class="hero-image-frame">
+              <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&amp;fit=crop&amp;w=1200&amp;q=88" alt="Útulná spieňňa s prírodnými textíliami" />
+            </div>
+            <div class="hero-floating-card">
+              <span class="sparkle">✦</span>
+              <div><strong>Made to slow down</strong><span>prírodné materiály · lokálna výroba</span></div>
+            </div>
+            <div class="hero-number" aria-hidden="true">01</div>
+          </div>
+        </div>
+        <div class="hero-bottom-line container"><span>Postielky pre každý deň</span><span class="line"></span><span>Scrolluj a objavuj</span><span class="scroll-arrow">↓</span></div>
+      </section>
+
+      <section class="trust-strip" aria-label="Naše výhody">
+        <div class="container trust-grid">
+          <div class="trust-item"><span class="trust-icon">✧</span><div><strong>Prírodné materiály</strong><small>100% európske látky</small></div></div>
+          <div class="trust-item"><span class="trust-icon">⌁</span><div><strong>Ručne ušité</strong><small>malé série, veľká láska</small></div></div>
+          <div class="trust-item"><span class="trust-icon">↺</span><div><strong>Pružná výmena</strong><small>30 dní bez starostí</small></div></div>
+          <div class="trust-item"><span class="trust-icon">♡</span><div><strong>Spokojný spánok</strong><small>záruka našej kvality</small></div></div>
+        </div>
+      </section>
+
+      <section class="shop-section section-padding" id="shop">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow"><span></span>Vyberte si svoje pohodlie</p>
+              <h2>Obliečky, ktoré sa<br /><em>stanú ritualom.</em></h2>
+            </div>
+            <p class="section-intro">Od jemného plátna po satén, ktorý polieča. Každý detail je premyslený, aby sa vaše postele stalo najobľúbenejším miestom doma.</p>
+          </div>
+
+          <div class="shop-toolbar reveal">
+            <div class="filter-list" role="tablist" aria-label="Filtrovať podľa materiálu">
+              <button class="filter-button active" type="button" role="tab" aria-selected="true" data-filter="všetky">Všetko <span>08</span></button>
+              <button class="filter-button" type="button" role="tab" aria-selected="false" data-filter="lnové">Lnové <span>02</span></button>
+              <button class="filter-button" type="button" role="tab" aria-selected="false" data-filter="bavlňové">Bavlnené <span>04</span></button>
+              <button class="filter-button" type="button" role="tab" aria-selected="false" data-filter="saténové">Saténové <span>01</span></button>
+              <button class="filter-button" type="button" role="tab" aria-selected="false" data-filter="detské">Detské <span>01</span></button>
+            </div>
+            <label class="search-field" for="product-search">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.8"></circle><path d="m16.2 16.2 4.3 4.3"></path></svg>
+              <input id="product-search" type="search" placeholder="Hľadať v kolekcii..." autocomplete="off" />
+            </label>
+          </div>
+
+          <div class="product-meta-row"><span id="product-count">8 produktov</span><span class="sort-label">Ručne vybrané pre teba <span>↓</span></span></div>
+
+          <div class="product-grid" id="product-grid">
+            <article class="product-card reveal" data-id="linen-cloud" data-category="lnové" data-name="Linen Cloud" data-price="129" data-material="100% európsky ľan" data-size="140 × 200 cm" data-description="Nadmerný ľanový set s jemnou textúrou a uvoľneným strihom. Zostane krásny aj po mnohých praniach.">
+              <div class="product-image-wrap">
+                <button class="product-image-button" type="button" data-action="details" aria-label="Zobraziť detail produktu Linden Cloud">
+                  <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Linen Cloud obliečky" loading="lazy" />
+                </button>
+                <span class="product-badge">Bestseller</span>
+                <button class="heart-button" type="button" aria-label="Pridať do obľúbených">♡</button>
+              </div>
+              <div class="product-info">
+                <div class="product-label-row"><span class="product-category">Lnové</span><span class="rating">★ 4,9</span></div>
+                <h3>Linen Cloud</h3>
+                <p>100% európsky ľan</p>
+                <div class="product-bottom"><strong>129 €</strong><button class="add-button" type="button" data-action="add" aria-label="Pridať Linden Cloud do košíka">Pridať <span>+</span></button></div>
+              </div>
+            </article>
+
+            <article class="product-card reveal reveal-delay-1" data-id="nocturne" data-category="saténové" data-name="Nocturne" data-price="109" data-material="Satén z recyclovaného hodvábdu" data-size="140 × 200 cm" data-description="Elegantný satén s chladivým dotykom a jemným leskom. Nocturne dodá vašej posteli hlboký, pokojný charakter.">
+              <div class="product-image-wrap">
+                <button class="product-image-button" type="button" data-action="details" aria-label="Zobraziť detail produktu Nocturne">
+                  <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Nocturne saténové obliečky" loading="lazy" />
+                </button>
+                <span class="product-badge badge-new">Novinka</span>
+                <button class="heart-button" type="button" aria-label="Pridať do obľúbených">♡</button>
+              </div>
+              <div class="product-info">
+                <div class="product-label-row"><span class="product-category">Saténové</span><span class="rating">★ 4,8</span></div>
+                <h3>Nocturne</h3>
+                <p>Satén z recyclovaného hodvábdu</p>
+                <div class="product-bottom"><strong>109 €</strong><button class="add-button" type="button" data-action="add" aria-label="Pridať Nocturne do košíka">Pridať <span>+</span></button></div>
+              </div>
+            </article>
+
+            <article class="product-card reveal reveal-delay-2" data-id="morning" data-category="bavlňové" data-name="Morning" data-price="89" data-material="Organická bavlna, 200 TC" data-size="140 × 200 cm" data-description="Svieža bavlna s percale povrchom, ktorý sa na roztoku cíti ako ráno. Jednoduchý dizajn, ktorý nikdy neomrzne.">
+              <div class="product-image-wrap">
+                <button class="product-image-button" type="button" data-action="details" aria-label="Zobraziť detail produktu Morning">
+                  <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Morning obliečky z organickej bavlny" loading="lazy" />
+                </button>
+                <span class="product-badge badge-soft">Obľúbené</span>
+                <button class="heart-button" type="button" aria-label="Pridať do obľúbených">♡</button>
+              </div>
+              <div class="product-info">
+                <div class="product-label-row"><span class="product-category">Bavlňové</span><span class="rating">★ 4,9</span></div>
+                <h3>Morning</h3>
+                <p>Organická bavlna, 200 TC</p>
+                <div class="product-bottom"><strong>89 €</strong><button class="add-button" type="button" data-action="add" aria-label="Pridať Morning do košíka">Pridať <span>+</span></button></div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-id="little-dream" data-category="detské" data-name="Little Dream" data-price="79" data-material="Bambusová bavlna" data-size="90 × 120 cm" data-description="Mäkké, priedušné a bezpečné obliečky pre malých spačanov. Neutralne odtiene, ktoré porastú s vaším dieťaťom.">
+              <div class="product-image-wrap">
+                <button class="product-image-button" type="button" data-action="details" aria-label="Zobraziť detail produktu Little Dream">
+                  <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Little Dream detské obliečky" loading="lazy" />
+                </button>
+                <span class="product-badge badge-new">Novinka</span>
+                <button class="heart-button" type="button" aria-label="Pridať do obľúbených">♡</button>
+              </div>
+              <div class="product-info">
+                <div class="product-label-row"><span class="product-category">Detské</span><span class="rating">★ 5,0</span></div>
+                <h3>Little Dream</h3>
+                <p>Bambusová bavlna</p>
+                <div class="product-bottom"><strong>79 €</strong><button class="add-button" type="button" data-action="add" aria-label="Pridať Little Dream do košíka">Pridať <span>+</span></button></div>
+              </div>
+            </article>
+
+            <article class="product-card reveal reveal-delay-1" data-id="terra" data-category="bavlňové" data-name="Terra" data-price="119" data-material="Brúsená organická bavlna" data-size="180 × 200 cm" data-description="Hrejivá a jemná textúra s bohatým vzhľadom. Terra je náš základný kúsok, ktorý nikdy nesklamie.">
+              <div class="product-image-wrap">
+                <button class="product-image-button" type="button" data-action="details" aria-label="Zobraziť detail produktu Terra">
+                  <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Terra obliečky z brúsenej bavlny" loading="lazy" />
+                </button>
+                <span class="product-badge">Bestseller</span>
+                <button class="heart-button" type="button" aria-label="Pridať do obľúbených">♡</button>
+              </div>
+              <div class="product-info">
+                <div class="product-label-row"><span class="product-category">Bavlňové</span><span class="rating">★ 4,9</span></div>
+                <h3>Terra</h3>
+                <p>Brúsená organická bavlna</p>
+                <div class="product-bottom"><strong>119 €</strong><button class="add-button" type="button" data-action="add" aria-label="Pridať Terra do košíka">Pridať <span>+</span></button></div>
+              </div>
+            </article>
+
+            <article class="product-card reveal reveal-delay-2" data-id="sienna" data-category="lnové" data-name="Sienna" data-price="139" data-material="100% európsky ľan" data-size="180 × 200 cm" data-description="Teplý tón ružového drevca a prirodzený vzhľad ľanu. Sienna sa stane obľúbenou farbou celej postele.">
+              <div class="product-image-wrap">
+                <button class="product-image-button" type="button" data-action="details" aria-label="Zobraziť detail produktu Sienna">
+                  <img src="https://images.unsplash.com/photo-1560185008-b033106af5c3?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Sienna ľanové obliečky" loading="lazy" />
+                </button>
+                <span class="product-badge badge-limited">Limitovaná edícia</span>
+                <button class="heart-button" type="button" aria-label="Pridať do obľúbených">♡</button>
+              </div>
+              <div class="product-info">
+                <div class="product-label-row"><span class="product-category">Lnové</span><span class="rating">★ 4,8</span></div>
+                <h3>Sienna</h3>
+                <p>100% európsky ľan</p>
+                <div class="product-bottom"><strong>139 €</strong><button class="add-button" type="button" data-action="add" aria-label="Pridať Sienna do košíka">Pridať <span>+</span></button></div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-id="dune" data-category="bavlňové" data-name="Dune" data-price="95" data-material="Percalová bavlna, 180 TC" data-size="140 × 200 cm" data-description="Sandové odtiene a chladivá percalová textúra. Dune je diskrétna, ale nezabudnuteľná.">
+              <div class="product-image-wrap">
+                <button class="product-image-button" type="button" data-action="details" aria-label="Zobraziť detail produktu Dune">
+                  <img src="https://images.unsplash.com/photo-1598928636135-d146006ff4be?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Dune percalové obliečky" loading="lazy" />
+                </button>
+                <span class="product-badge badge-soft">Obľúbené</span>
+                <button class="heart-button" type="button" aria-label="Pridať do obľúbených">♡</button>
+              </div>
+              <div class="product-info">
+                <div class="product-label-row"><span class="product-category">Bavlňové</span><span class="rating">★ 4,7</span></div>
+                <h3>Dune</h3>
+                <p>Percalová bavlna, 180 TC</p>
+                <div class="product-bottom"><strong>95 €</strong><button class="add-button" type="button" data-action="add" aria-label="Pridať Dune do košíka">Pridať <span>+</span></button></div>
+              </div>
+            </article>
+
+            <article class="product-card reveal reveal-delay-1" data-id="pearl" data-category="bavlňové" data-name="Pearl" data-price="99" data-material="Saténová bavlna" data-size="140 × 200 cm" data-description="Jemný lesk a obľúbená biela farba. Pearl je minimalistický základ, ktorý sa hodí do každého interiéru.">
+              <div class="product-image-wrap">
+                <button class="product-image-button" type="button" data-action="details" aria-label="Zobraziť detail produktu Pearl">
+                  <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Pearl biele obliečky" loading="lazy" />
+                </button>
+                <span class="product-badge">Obľúbené</span>
+                <button class="heart-button" type="button" aria-label="Pridať do obľúbených">♡</button>
+              </div>
+              <div class="product-info">
+                <div class="product-label-row"><span class="product-category">Bavlňové</span><span class="rating">★ 4,8</span></div>
+                <h3>Pearl</h3>
+                <p>Saténová bavlna</p>
+                <div class="product-bottom"><strong>99 €</strong><button class="add-button" type="button" data-action="add" aria-label="Pridať Pearl do košíka">Pridať <span>+</span></button></div>
+              </div>
+            </article>
+          </div>
+          <div class="empty-state" id="no-products" hidden>
+            <span>⌁</span>
+            <h3>Nič sme nenašli</h3>
+            <p>Skúste iný názov alebo si zobrazte celú kolekciu.</p>
+            <button class="button button-secondary" type="button" data-action="reset-filter">Zobraziť všetko</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-section section-padding" id="story">
+        <div class="container story-grid">
+          <div class="story-visual reveal">
+            <div class="story-image-main"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Prírodný materiál a ručne ušité textílie" loading="lazy" /></div>
+            <div class="story-image-small"><img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&amp;fit=crop&amp;w=600&amp;q=85" alt="Detail tkania textílií" loading="lazy" /></div>
+            <div class="story-stamp"><span>od</span><strong>2018</strong><span>Bratislava</span></div>
+          </div>
+          <div class="story-copy reveal reveal-delay-1">
+            <p class="eyebrow"><span></span>Viac než len obliečky</p>
+            <h2>Vyrábame pocit,<br /><em>nie len produkty.</em></h2>
+            <p class="large-copy">Mäkko vzniklo z jednoduchého presvedčenia: spánok by mal byť tým najmäkším momentom dňa. Vyberáme preto len materiály, ktoré dýchajú, vydržia a časom sa stanú ešte krajšími.</p>
+            <p class="body-copy">Naše obliečky šijeme v malých sériách s talianskymi rodinami. Každý kus putuje z tela látky priamo k vám — bez zbytočných medzikrokov a bez kompromisov.</p>
+            <a class="text-link" href="#journal">Pozrite sa dovnútra <span>→</span></a>
+            <div class="story-signature">Mäkko <span>—</span> tvoríme pre vaše pohodlie</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="values-section section-padding">
+        <div class="container">
+          <div class="values-heading reveal">
+            <p class="eyebrow"><span></span>Prečo Mäkko</p>
+            <h2>Detaily, ktoré<br /><em>robia rozdiel.</em></h2>
+          </div>
+          <div class="values-grid">
+            <article class="value-card reveal"><span class="value-number">01</span><div class="value-icon">✦</div><h3>Textúra, ktorú<br />cítite</h3><p>Prirodzené vlákna s jemnou štruktúrou, ktoré pokoja aj pokožku.</p><a href="#story" class="round-arrow" aria-label="Prečítať o materiáloch">↗</a></article>
+            <article class="value-card value-card-dark reveal reveal-delay-1"><span class="value-number">02</span><div class="value-icon">◌</div><h3>Farby, ktoré<br />nie sú hlasité</h3><p>Odtiene inšpirované prírodou, ktoré harmonizujú s vašim domovom.</p><a href="#shop" class="round-arrow light" aria-label="Prečítať o kolekcii">↗</a></article>
+            <article class="value-card value-card-sand reveal reveal-delay-2"><span class="value-number">03</span><div class="value-icon">∞</div><h3>Stiahnutie<br />na neurčito</h3><p>Kvalitné materiály, ktoré časom získavajú svoju krásu.</p><a href="#faq" class="round-arrow" aria-label="Prečítať starostlivosť">↗</a></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="journal-section section-padding" id="journal">
+        <div class="container">
+          <div class="journal-header reveal">
+            <div><p class="eyebrow"><span></span>Z nášho denníka</p><h2>Malé inšpirácie<br /><em>na lepší spánok.</em></h2></div>
+            <a class="text-link" href="#journal">Zobraziť všetky príspevky <span>→</span></a>
+          </div>
+          <div class="journal-grid">
+            <article class="journal-card journal-card-large reveal"><a href="#journal" class="journal-image"><img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Pohodlná spieňňa s ranným svetlom" loading="lazy" /><span class="journal-read">Čítať príspevok ↗</span></a><div class="journal-meta"><span>Domov</span><span>·</span><span>5 min čítania</span></div><h3>Ako vytvoriť spieňňu, v ktorej sa chcete znova narodiť</h3></article>
+            <article class="journal-card reveal reveal-delay-1"><a href="#journal" class="journal-image"><img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Textúra bielej postele" loading="lazy" /><span class="journal-read">Čítať príspevok ↗</span></a><div class="journal-meta"><span>Materiály</span><span>·</span><span>3 min čítania</span></div><h3>Prírodné vlákna: čo znamená „pravá bavlna“?</h3></article>
+            <article class="journal-card reveal reveal-delay-2"><a href="#journal" class="journal-image"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Uvoľnená atmosféra domova" loading="lazy" /><span class="journal-read">Čítať príspevok ↗</span></a><div class="journal-meta"><span>Rutiny</span><span>·</span><span>4 min čítania</span></div><h3>Večerný rituál, ktorý vám vráti svoj pokoj</h3></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section section-padding">
+        <div class="container testimonial-box reveal">
+          <div class="quote-mark">“</div>
+          <blockquote>Mäkko sa stalo jednou z tých malých vecí, po ktorých každý deň túžite. Ráno sa na ne chcem uložiť znova.</blockquote>
+          <div class="testimonial-author"><span class="author-avatar">LK</span><div><strong>Lucia Kováčová</strong><span>Bratislava · overená zákazníčka</span></div></div>
+          <div class="testimonial-dots"><span class="active"></span><span></span><span></span></div>
+        </div>
+      </section>
+
+      <section class="faq-section section-padding" id="faq">
+        <div class="container faq-grid">
+          <div class="faq-intro reveal"><p class="eyebrow"><span></span>Potrebujete poradiť?</p><h2>Často sa<br /><em>ptáte.</em></h2><p class="body-copy">Nenašli ste odpoveď? radi vám pomôžeme.</p><a class="text-link" href="mailto:ahoj@makko.sk">Napíšte nám <span>→</span></a></div>
+          <div class="faq-list reveal reveal-delay-1">
+            <details open><summary>Ako vyberiem správny rozmer?<span>+</span></summary><p>Na našej stránke nájdete rozmer podľa štandardných európskych postelí. Ak máte neštandardné rozmery, napíšte nám a poradíme vám.</p></details>
+            <details><summary>Prečo sú niektoré obliečky z ľanu?<span>+</span></summary><p>Ľan je prirodzený, veľmi priedušný a časom sa stáva jemnejším. Je ideálny na letné noci aj dobre vetrané izby.</p></details>
+            <details><summary>Ako sa starajú o obliečky?<span>+</span></summary><p>Perie sa odporúča sušiť pri nízkej teplote, bielu bielizeň možno prať na 30 – 40 °C. Vždy sa riaďte štítkom na výrobku.</p></details>
+            <details><summary>Je možné vrátiť alebo vymeniť tovar?<span>+</span></summary><p>Áno. Máte 30 dní na bezplatnú výmenu alebo vrátenie, pokiaľ zostane výrobok v pôvodnom stave.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter-section">
+        <div class="container newsletter-inner reveal">
+          <div><p class="eyebrow"><span></span>Krátky poštový lístik</p><h2>Príspevky, ktoré vás<br /><em>potešia.</em></h2></div>
+          <form class="newsletter-form" id="newsletter-form"><label for="email">E-mailová adresa</label><div class="newsletter-input"><input id="email" type="email" placeholder="vas@email.sk" required /><button type="submit" aria-label="Odoslať newsletter">→</button></div><small>Zdieľame len pekné veci. Bez spamu, vždy.</small></form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div class="footer-brand"><a class="brand" href="#top">mäkko<span>.</span></a><p>Textílie pre pokojnejšie dni.<br />Vyrábané s láskou na Slovensku.</p><div class="socials"><a href="#top" aria-label="Instagram">ig</a><a href="#top" aria-label="Pinterest">p</a><a href="#top" aria-label="Facebook">f</a></div></div>
+        <div class="footer-links"><div><strong>Objavujte</strong><a href="#shop">Všetky produkty</a><a href="#shop">Novinky</a><a href="#shop">Bestsellery</a><a href="#journal">Magazín</a></div><div><strong>Pomoc</strong><a href="#faq">Dodanie a platba</a><a href="#faq">Výmena tovaru</a><a href="#faq">Starostlivosť</a><a href="mailto:ahoj@makko.sk">Kontakt</a></div><div><strong>Mäkko</strong><a href="#story">Náš príbeh</a><a href="#story">Naše materiály</a><a href="#top">Prihlásiť sa</a></div></div>
+      </div>
+      <div class="container footer-bottom"><span>© 2026 Mäkko Studio</span><div><a href="#top">Ochrana údajov</a><a href="#top">Podmienky</a></div><span>Made with slow intention <span class="footer-heart">♥</span></span></div>
+    </footer>
+
+    <div class="cart-backdrop" id="cart-backdrop"></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" inert aria-label="Nákupný košík">
+      <div class="drawer-header"><div><p class="eyebrow"><span></span>Vaša objednávka</p><h2>Košík <span id="drawer-count">(0)</span></h2></div><button class="drawer-close" type="button" aria-label="Zavrieť košík" data-action="close-cart">×</button></div>
+      <div class="shipping-progress"><div class="shipping-copy"><span id="shipping-message">Pridajte ešte 80 € a výprava bude zadarmo</span><span>✦</span></div><div class="progress-track"><span id="shipping-progress"></span></div></div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty"><div class="empty-bag">♡</div><h3>Košík je zatiaľ prázdny</h3><p>Tu sa čaká na vašu obľúbenú textíliu.</p><a class="button button-secondary" href="#shop" data-action="shop-from-cart">Prehliadnuť produkty</a></div>
+      <div class="cart-summary" id="cart-summary"><div><span>Medzisúčet</span><strong id="cart-total">0 €</strong></div><div><span>Doprava</span><strong id="shipping-cost">Výpočet</strong></div><div class="summary-total"><span>Spolu</span><strong id="cart-grand-total">0 €</strong></div><button class="button button-primary checkout-button" type="button" data-action="checkout">Pokračovať k platbe <span>↗</span></button><p class="secure-note"><span>⌾</span> Bezpečná platba · vrátenie do 30 dní</p></div>
+    </aside>
+
+    <div class="modal-backdrop" id="product-modal" aria-hidden="true" inert>
+      <div class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Zavrieť detail" data-action="close-modal">×</button>
+        <div class="modal-image"><img id="modal-image" src="" alt="" /></div>
+        <div class="modal-content"><p class="modal-category" id="modal-category"></p><h2 id="modal-title"></h2><div class="modal-rating">★ 4,9 <span>· veľmi obľúbené</span></div><p class="modal-description" id="modal-description"></p><div class="modal-specs"><div><span>Materiál</span><strong id="modal-material"></strong></div><div><span>Rozmer</span><strong id="modal-size"></strong></div></div><div class="modal-bottom"><strong id="modal-price"></strong><button class="button button-primary" type="button" data-action="modal-add">Pridať do košíka <span>+</span></button></div><p class="modal-note">✦ Bezpečná platba · dodanie do 2 – 4 dní</p></div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"><span class="toast-icon">✓</span><span id="toast-message">Pridané do košíka</span></div>
+    <script src="app.js"></script>
+  </body>
+</html>
